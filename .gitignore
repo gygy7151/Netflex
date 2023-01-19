@@ -2,7 +2,10 @@
 .vscode/
 
 ### Node Package ###
-node_modules/
+/node_modules
 
 ### HTTP REQUEST KEY ###
 httpRequest.js
+
+### package.json and package-lock.json ###
+package-lock.json
