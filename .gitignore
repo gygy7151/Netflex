@@ -1,0 +1,8 @@
+### VS Code ###
+.vscode/
+
+### Node Package ###
+node_modules/
+
+### HTTP REQUEST KEY ###
+httpRequest.js
