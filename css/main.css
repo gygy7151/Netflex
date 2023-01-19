@@ -59,19 +59,41 @@ section .search-container h2 {
   font-weight: 400;
 }
 section .search-container .input-container {
-  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  border-radius: 1px solid;
+  background-color: #fff;
+  border-radius: 0px 30px 30px 0px;
 }
 section .search-container .input-container input {
-  width: 450px;
-  height: 60px;
-  font-size: 20px;
+  background-color: transparent;
+  width: 30vh;
   border: 1px solid transparent;
   border-radius: 5px 0px 0px 5px;
+  font-size: 20px;
 }
 section .search-container .input-container input:focus {
+  outline: none;
+}
+section .search-container .input-container input::-moz-placeholder {
+  color: #000000;
+}
+section .search-container .input-container input:-ms-input-placeholder {
+  color: #000000;
+}
+section .search-container .input-container input::placeholder {
+  color: #000000;
+}
+section .search-container .input-container .select-year {
+  background-color: #fff;
+  width: 20vh;
+  border: 0px;
+  font-size: 20px;
+}
+section .search-container .input-container .select-year:focus {
   outline: none;
 }
 section .search-container .input-container .netflex-stick {
