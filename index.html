@@ -7,51 +7,91 @@
 			href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
 		/>
 		<link rel="stylesheet" href="./css/main.css" />
-		<script type="module" defer src="./js/main.js"></script>
-		<script
-			type="text/javascript"
-			async
-			src="https://tenor.com/embed.js"
-		></script>
+		<script defer src="./main.js"></script>
 		<title>Netflex</title>
 	</head>
 	<body>
 		<header>
-			<div class="main-header">
-				<img class="logo" src="./store/netflex.png" alt="header-logo" />
-			</div>
-			<div class="home-btn"></div>
+			<a href="#">
+				<div class="logo"></div>
+				<!-- <img class="logo" src="./store/netflex.png" alt="header-logo" /> -->
+			</a>
 		</header>
 		<section>
-			<box class="search-container">
+			<div class="hidden-show-detail-wrapper">
+				<div class="show-detail-background"></div>
+				<div class="show-detail-wrapper">
+					<div class="show-detail-div">
+						<div class="show-detail-view">
+							<span class="close-button">X</span>
+							<div class="poster-wrap">
+								<div class="skeleton-loading">
+									<div class="loading-image blink-me"></div>
+								</div>
+								<img class="poster-image" alt="movie-poster">
+							</div>
+							<div class="scoreboard-wrap">
+								<div class="skeleton-loading">
+									<div class="loading-text blink-me"></div>
+									<div class="loading-text blink-me"></div>
+									<div class="loading-scoreboard blink-me"></div>
+								</div>
+								<div class="title-div">
+									<h1 class="scoreboard-title"></h1>
+								</div>
+								<div class="info-container">
+									<span class="rating"></span>
+									<p class="scoreboard-info"></p>
+								</div>
+								<div class="scoreboard-container">
+									<div class="tomato-container">
+										<div class="wrap">
+											<img class="icon" src="./store/rotten-tomato.png">
+											<span class="percentage"></span>
+										</div>
+										<span class="score-type"></span>
+									</div>
+									<div class="audience-container">
+										<div class="wrap">
+											<img class="icon" src="./store/audience.png">
+											<span class="percentage"></span>
+										</div>
+										<span class="score-type"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="search-container">
 				<h1>Surf On The Movies!</h1>
 				<h2>you can search only in English.</h2>
 				<div class="input-container">
-					<input type="text" class="input-bar" placeholder="search..." />
-					<select class="select-year">
-						<option value="">select year...</option>
-					</select>
+					<input
+						type="text"
+						class="keyword-search-bar"
+						placeholder="title..."
+					/>
+					<input type="text" class="year-search-bar" placeholder="year..." />
 					<div class="netflex-stick">
-						<img src="./store/netflix-logo.png" alt="netflex-new-logo" />
+						<img src="./store/netflix-logo.png" alt="netflex-new-logo">
 					</div>
 				</div>
-			</box>
-			<box class="movies-container">
-				<div class="hidden-alarm">
-					<span>The requested term could not be found!</span>
-					<div
-						class="tenor-gif-embed"
-						data-postid="19489640"
-						data-aspect-ratio="0.953125"
-						data-width="100%"
-					></div>
-				</div>
-			</box>
+			</div>
+			<div class="movies-wrap">
+				<div class="movies-container"></div>
+				<img class="move-top" src="./store/netflix-logo.png">
+			</div>
+			<div class="hidden search-done-alarm">
+				<span>Done!</span>
+			</div>
 			<img
 				class="hidden-banner"
 				src="./store/banner.jpg"
 				alt="main-banner-image"
-			/>
+			>
 		</section>
 		<footer>
 			<div class="footer-text">
